@@ -41,19 +41,9 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
     while True:
         options = get_valid_input(f"Asset replacements:\n"
                         f"0:  {Fore.GREEN}Custom{Style.RESET_ALL}\n"
-                        f"1:  {Fore.GREEN}Sights{Style.RESET_ALL}\n"
-                        f"2:  {Fore.GREEN}Arm model tweaks{Style.RESET_ALL}\n"
-                        f"3:  {Fore.GREEN}Sleeves{Style.RESET_ALL}\n"
-                        f"4:  {Fore.GREEN}No textures{Style.RESET_ALL}\n"
-                        f"5:  {Fore.GREEN}Default skyboxes{Style.RESET_ALL}\n"
-                        f"6:  {Fore.GREEN}Gun skins{Style.RESET_ALL}\n"
-                        f"7:  {Fore.GREEN}Gun Sounds{Style.RESET_ALL}\n"
-                        f"8:  {Fore.GREEN}Gun smoke{Style.RESET_ALL}\n"
-                        f"9:  {Fore.GREEN}Hit tweaks{Style.RESET_ALL}\n"
-                        f"10: {Fore.GREEN}Grenade tweaks{Style.RESET_ALL}\n"
-                        f"11: {Fore.GREEN}Misc tweaks{Style.RESET_ALL}\n"
+                        f"1:  {Fore.GREEN}R6 Noclip{Style.RESET_ALL}\n"
                         f"Type 'back' to return to the previous menu.\n: ",
-                        valid_values=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+                        valid_values=[0, 1]
         )
         if options == 'back':
             print(f"{Fore.CYAN}\nReturning to main menu.{Style.RESET_ALL}")
