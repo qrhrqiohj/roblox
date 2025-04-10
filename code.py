@@ -41,7 +41,8 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
     while True:
         options = get_valid_input(f"Asset replacements:\n"
                         f"0:  {Fore.GREEN}Custom{Style.RESET_ALL}\n"
-                        f"1:  {Fore.GREEN}R6 Noclip{Style.RESET_ALL}\n"
+                        f"1:  {Fore.GREEN}Deprecated{Style.RESET_ALL}\n"
+                        #f"1:  {Fore.GREEN}R6 Noclip{Style.RESET_ALL}\n"
                         f"Type 'back' to return to the previous menu.\n: ",
                         valid_values=[0, 1]
         )
@@ -54,9 +55,9 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
             match options:
                 case 0:
                     return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names
-                case 1:
-                    addon = ['a2f3fad0cecf63e774e8ef6cc9c97b4e', 'd20f0d3583c732a8051c2158f5cc1f19', '0fd5f9c25cd37c70ef6e684c72074e49', '22a87dc2fcc1d7f2d4eebec174141c11', '7539c4f54a00b625bdbd7d7a7e7ef8f1']
-                    addon2 = "ffc3fc61237335e80db176e2827ed1ed"
-                    return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names
+                #case 1:
+                    #addon = ['a2f3fad0cecf63e774e8ef6cc9c97b4e', 'd20f0d3583c732a8051c2158f5cc1f19', '0fd5f9c25cd37c70ef6e684c72074e49', '22a87dc2fcc1d7f2d4eebec174141c11', '7539c4f54a00b625bdbd7d7a7e7ef8f1']
+                    #addon2 = "ffc3fc61237335e80db176e2827ed1ed"
+                    #return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names
         except Exception as e:
             print(f"{Fore.RED}An error occurred: {e}{Style.RESET_ALL}")
