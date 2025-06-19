@@ -79,7 +79,7 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
                                 addon = "7ce2ac6c1ed6d340767e00fe02f529f6"
                                 addon2 = "b96f172467aa810b20bc5a99eba858e5"
                                 push(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names)
-                                addon = "59cccb6d405a32f9a1d48ac20ec23fd2"
+                                addon = ["59cccb6d405a32f9a1d48ac20ec23fd2", "06ad51e8624af959dc7b5994b8453f29"]
                                 addon2 = "9d5876394f908ec23b2d54dfb424059b"
                                 return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names
                 case 2:
