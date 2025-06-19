@@ -61,7 +61,7 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
                         sky_option = get_valid_input(
                             f"\nPick which item you want to change\n"
                             f"1: {Fore.GREEN}Stevie Standard > Headless{Style.RESET_ALL}\n"
-                            f"2: {Fore.GREEN}International France Fedora > SKOTN{Style.RESET_ALL}\n"
+                            f"2: {Fore.GREEN}International Netherlands Fedora > SKOTN{Style.RESET_ALL}\n"
                             f"Type 'back' to return to the previous menu.\n: ",
                             valid_values=[1, 2]
                         )
