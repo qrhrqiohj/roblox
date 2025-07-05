@@ -1,6 +1,6 @@
+import sys
 from colorama import Fore, Style, init
 init()
-import importlib.util
 import os
 
 # user guide for making your own
@@ -26,14 +26,8 @@ def get_valid_input(prompt, valid_values=None):
 
 
 def push(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names):
-    spec = importlib.util.spec_from_file_location("backbone_module", "main.py")
-    backbone_module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(backbone_module)
-
-    if hasattr(backbone_module, "backbone"):
-        json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names = backbone_module.backbone(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names)
-    else:
-        print(f"Error: The file {backbone_module} does not contain a `backbone` function.")
+    main_module = sys.modules['__main__']
+    main_module.backbone(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names)
 
 
 def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names):
