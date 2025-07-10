@@ -66,7 +66,7 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
                         match sky_option:
                             case 1:
                                 addon = ["0111487c7d3044bec56587c86740c9ce", "aa50829c76ec2756b28883af05342ca6"]
-                                addon2 = "ffc3fc61237335e80db176e2827ed1ed"
+                                addon2 = "912c8cc21a2bfff5a882e91a8695da9a"
                                 return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names
                             case 2:
                                 addon = "7ce2ac6c1ed6d340767e00fe02f529f6"
