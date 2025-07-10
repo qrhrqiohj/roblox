@@ -85,7 +85,6 @@ def run(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display
                     push(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names)
                     addon = ""
                     addon2 = ""
-                    push(json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names)
                     return json_data, start_key, start_key2, addon, addon2, skip, game_pre, display_names
         except Exception as e:
             print(f"{Fore.RED}An error occurred: {e}{Style.RESET_ALL}")
